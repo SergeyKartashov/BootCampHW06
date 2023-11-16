@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 06 - data from public API</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./src/script.js" type="module"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>Викторина</h1>
+            <div class="form-wrapper api">
+                <form class="api__form">
+                    <div class="api__container">
+                        <button class="api__question button">Новый вопрос</button>
+                        <div class="api__question_area" id="question_area"></div>
+                    </div>
+                    <div class="api__container">
+                        <label for="your-answer">Ваш ответ: </label>
+                        <input type="text" class="api__your_answer" id="your_answer" placeholder="Поле для ввода">
+                        <button class="api__check button">Проверить</button>
+                        <div class="api__result" id="check_result"></div>
+                    </div>
+                    <div class="api__container">
+                        <button class="api__answer button">Правильный ответ</button>
+                        <div id="right_answer"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
