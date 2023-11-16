@@ -1,5 +1,6 @@
+const apiUrl = 'https://jservice.io/api/random?count=1';
+
 export class DataFromAPI {
-    static apiUrl = 'https://jservice.io/api/random?count=1';
 
     constructor() {
         this.apiForm = document.querySelector('.api__form');
@@ -16,7 +17,7 @@ export class DataFromAPI {
     getDataFromAPI = () => {
         this.rightAnswerArea.innerHTML = '';
         this.checkResult.innerHTML = '';
-        fetch(this.constructor.apiUrl)
+        fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
                 this.displayQuestion(data);
